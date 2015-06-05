@@ -1,7 +1,7 @@
 Package.describe({
   name: 'loftsteinn:intl-tel-input',
   summary: 'Meteor package for https://github.com/Bluefieldscom/intl-tel-input',
-  version: '5.1.6_2',
+  version: '5.8.7',
   git: 'https://github.com/oskarszoon/meteor-intl-tel-input.git'
 });
 
