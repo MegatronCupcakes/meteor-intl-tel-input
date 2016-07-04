@@ -1,8 +1,8 @@
 Package.describe({
   name: 'loftsteinn:intl-tel-input',
-  summary: 'Meteor package for https://github.com/Bluefieldscom/intl-tel-input',
-  version: '5.8.7_2',
-  git: 'https://github.com/oskarszoon/meteor-intl-tel-input.git'
+  summary: 'Meteor package for https://github.com/jackocnr/intl-tel-input',
+  version: '9.0.0',
+  git: 'https://github.com/btafel/meteor-intl-tel-input.git'
 });
 
 Package.onUse(function(api) {
@@ -27,7 +27,7 @@ Package.onTest(function(api) {
   // Client only
   api.use([
     'tinytest',
-    'loftsteinn:intl-tel-input'
+    'btafel:intl-tel-input'
   ], 'client');
 
   //== Add files
