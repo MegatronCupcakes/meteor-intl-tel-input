@@ -1,8 +1,8 @@
 Package.describe({
-  name: 'loftsteinn:intl-tel-input',
-  summary: 'Meteor package for https://github.com/jackocnr/intl-tel-input',
-  version: '9.0.0',
-  git: 'https://github.com/btafel/meteor-intl-tel-input.git'
+  name: 'galacticwidgets:intl-tel-input',
+  summary: 'Meteor package for https://github.com/MegatronCupcakes/meteor-intl-tel-input',
+  version: '10.0.0',
+  git: 'https://github.com/MegatronCupcakes/meteor-intl-tel-input.git'
 });
 
 Package.onUse(function(api) {
@@ -16,9 +16,12 @@ Package.onUse(function(api) {
   // Client only
   api.addFiles([
     'lib/intl-tel-input/build/js/intlTelInput.js',
-    'lib/intl-tel-input/build/css/intlTelInput.css',
-    'lib/intl-tel-input/build/img/flags.png',
-    'lib/intl-tel-input/build/img/flags@2x.png'
+    'lib/intl-tel-input/build/css/intlTelInput.css'
+  ], 'client');
+
+  api.addAssets([
+      'lib/intl-tel-input/build/img/flags.png',
+      'lib/intl-tel-input/build/img/flags@2x.png'
   ], 'client');
 });
 
@@ -27,7 +30,8 @@ Package.onTest(function(api) {
   // Client only
   api.use([
     'tinytest',
-    'btafel:intl-tel-input'
+    'btafel:intl-tel-input',
+    'isaac:intl-tel-input-utils'
   ], 'client');
 
   //== Add files
